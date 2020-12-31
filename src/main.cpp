@@ -150,7 +150,7 @@ void loop()
     // Restart takes quite some time
     // To skip it, call init() instead of restart()
     SerialMon.println("Initializing modem...");
-    modem.restart();
+    modem.init();
 
     // Turn off network status lights to reduce current consumption
     turnOffNetlight();
